@@ -76,26 +76,51 @@ class Program
          *********************************************************************/
         
         // Define the variables to hold the numbers we need to add
-        int number1 = 0;
-        int number2 = 0;
-        int number3 = 0; 
+        int number1 = 0;  // Since we will be doing math it needs to be numeric
+        int number2 = 0;  // Since we will be doing math it needs to be numeric
+        int number3 = 0;  // Since we will be doing math it needs to be numeric
         
         // Define a variable to hold the sum of the numbers
         int sum = 0; 
         
-        Console.WriteLine("--- Starting program ---");
+        Console.WriteLine("--- Joined Game... ---");
         
         // Ask for the numbers one at time using the C# Console object
         //     which represents the keyboard and screen
-        // Console.ReadLine() returns a string - cannot store in an int
+        // Console.ReadLine() returns a string from keyboard - cannot store in an int
         Console.WriteLine("Please enter a number:  ");  // Asking for the number
-        string aLine;                 // String to hold the line of input from the keyboard
+        string aLine;                 // Define a string to hold the line of input from the keyboard
         aLine = Console.ReadLine();                   // Get a line from the keyboard
         // We need an int value to store our numbers
         // Console.ReadLine() only returns a string
         // So we need to convert the string from Console.ReadLine() to an int
         // int.Parse(string) will convert a string to an int
         number1 = int.Parse(aLine);
+        
+        
+       Console.WriteLine("Please enter a number:  ");
+       aLine = Console.ReadLine(); // reuse "the Response" define above
+       number2 = int.Parse(aLine);
+        
+           
+        Console.WriteLine("Please enter a number:  ");
+        aLine = Console.ReadLine();
+        number3 = int.Parse(aLine);
+            
+            
+        //Add the numbers together create a sum/total
+        sum = number1 + number2 + number3;
+//however you code as long as it's the correct solution AND you understand it, it's correct.
+        //Alternate coding method
+       
+        // sum = sum + number1
+        //sum = sum + number2
+        //sum = sum + number3
+       
+        
+        // 3. Tell the requester the sum/total (display)
+
+        Console.WriteLine("The sum is: " + sum);
         
         
         Console.WriteLine("--- Ending program ---");
