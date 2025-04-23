@@ -28,12 +28,12 @@ internal class Program
         }
 
         WriteSeparatorLine("Find an Entry");
-
-        while (true)
+        
+        while (true) // Set up a loop forever loop
         {
             if (!moreInput())
             {
-                break;
+                break; // Break out of the loop
             }
 
             Console.Write("\nEnter value to search for: ");
@@ -219,7 +219,34 @@ internal class Program
 
         bool getInput = true;   // Control the user interaction loop
 
-        do
+        do // variable controlled loop -- bool variable being set to determine if we continue
+        {
+            // Display the menu of options
+            Console.WriteLine("\n-------------------------------------");
+            Console.WriteLine("----- Do you have more input? -----");
+            Console.WriteLine("-------------------------------------\n");
+
+            // Ask the user for input
+            Console.Write("Please enter Y or N: ");
+            whatUserTyped = Console.ReadLine();
+
+            // Convert to upper case
+            whatUserTyped = whatUserTyped.ToUpper();
+
+            // Check the first character of the string
+            string firstChar = whatUserTyped.Substring(0, 1);
+
+            if (firstChar == "Y")
+            {
+                getInput = false; // Set loop control variable to end the loop
+                isThereInput = true;
+            }
+            else if (firstChar == "N")
+            {
+                getInput = false; // set loop control variable to end the loop
+                isThereInput = false;
+            }
+        } while (getInput); // Loop while we get input
         {
             // Ask the user if they have any numbers to enter (Y/N)
             Console.WriteLine("\nDo you have any values to enter (Y/N)?");
