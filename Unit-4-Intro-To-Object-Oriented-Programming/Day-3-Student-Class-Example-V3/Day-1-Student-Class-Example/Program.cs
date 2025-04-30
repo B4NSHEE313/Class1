@@ -76,5 +76,10 @@ class Program
     Console.WriteLine($"\nThe avg of scores: {johnTheStudent.AvgOfScores()}");
 
     //Console.WriteLine(aStudent.studentName);
+    // i want see the private name
+    Console.WriteLine($"aStudent2 oject has the name: {aStudent2.GetStudentName()}");
+    
+    
+    
     }
 }

@@ -84,6 +84,18 @@ public class Student
         studentName = name;   // Set the class data to the data passed in from the user
         testScores  = scores; // Set the class data to the data passed in from the user
     }
+
+    public string GetStudentName()
+    {
+        return studentName; // returns the value of this data member
+        
+    }
+
+    public List<double> GetTestScores()
+    {
+        return testScores;
+    }
+    
     
     /********************************************************************************************
      * Methods to manipulate the class
