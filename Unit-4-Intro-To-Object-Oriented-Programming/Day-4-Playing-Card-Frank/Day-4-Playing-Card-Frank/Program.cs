@@ -43,8 +43,8 @@ namespace Day_2_Playing_Card_Example
              *     and display them both
              *************************************************************************/
 
-         // PlayingCard newCard = aCard;  // This makes both newCard and aCard point to the same object
-            PlayingCard newCard = new PlayingCard(aCard); // Use copy constructor
+         // PlayingCard newCard = aCard;  // copy the reference - This makes both newCard and aCard point to the same object
+            PlayingCard newCard = new PlayingCard(aCard); // Use copy constructor copy the data
 
             Console.WriteLine($"  aCard is: {aCard}");
             Console.WriteLine($"newCard is: {newCard}");
