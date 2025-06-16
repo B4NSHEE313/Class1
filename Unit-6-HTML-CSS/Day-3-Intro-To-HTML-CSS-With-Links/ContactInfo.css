@@ -1,0 +1,7 @@
+/*Styling for contact info page */
+/*Style the navigation section */
+ nav {
+margin-bottom: 20px; /* put space after the element on the page */
+margin-top: 10px; /* put space before the element on the page */
+font-size: 15pt;
+}
